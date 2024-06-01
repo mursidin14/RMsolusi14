@@ -30,6 +30,11 @@
     padding: 20px 0px;
 }
 
+a.text-accent-content.active {
+    border-bottom: 4px solid rgb(99 102 241);
+    border-radius: 5px;
+}
+
 @media(max-width: 4000px){
     .drawer-content{
         display: none;

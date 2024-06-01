@@ -1,23 +1,11 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
   About,
-  Cart,
   Contact,
   HomeLayout,
   Landing,
-  Login,
-  Register,
-  Shop,
-  SingleProduct,
-  Wishlist,
-  Profile,
-  Search,
-  ThankYou,
-  OrderHistory
 } from "./pages";
 import { landingLoader } from "./pages/Landing";
-import { singleProductLoader } from "./pages/SingleProduct";
-import { shopLoader } from "./pages/Shop";
 import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
@@ -31,27 +19,8 @@ const router = createBrowserRouter([
         loader: landingLoader,
       },
       {
-        path: "shop",
-        element: <Shop />,
-        loader: shopLoader
-
-      },
-      {
-        path: "shop/product/:id",
-        element: <SingleProduct />,
-        loader: singleProductLoader,
-      },
-      {
         path: "about",
         element: <About />,
-      },
-      {
-        path: "login",
-        element: <Login />,
-      },
-      {
-        path: "register",
-        element: <Register />,
       },
       {
         path: "contact",
@@ -61,30 +30,6 @@ const router = createBrowserRouter([
         path: "about-us",
         element: <About />,
       },
-      {
-        path: "cart",
-        element: <Cart />,
-      },
-      {
-        path: "wishlist",
-        element: <Wishlist />,
-      },
-      {
-        path: "user-profile",
-        element: <Profile />,
-      },
-      {
-        path:"search",
-        element: <Search />
-      },
-      {
-        path:"thank-you",
-        element: <ThankYou />
-      },
-      {
-        path:"order-history",
-        element: <OrderHistory />
-      }
     ],
   },
 ]);
