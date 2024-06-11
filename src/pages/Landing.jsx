@@ -19,7 +19,7 @@ const Landing = () => {
     <main>
       <Hero />
 
-      <div className="selected-products">
+      <div id="product" className="selected-products">
         <h2 className="text-6xl text-center my-12 max-md:text-4xl text-accent-content">
           Solusi Digital
         </h2>

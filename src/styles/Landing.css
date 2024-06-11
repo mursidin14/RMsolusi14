@@ -1,5 +1,7 @@
 
-
+html {
+    scroll-behavior: smooth;
+}
 .selected-products-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);

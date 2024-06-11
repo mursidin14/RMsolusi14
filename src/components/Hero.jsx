@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "../styles/Hero.css";
 const Hero = () => {
   return (
@@ -9,7 +8,7 @@ const Hero = () => {
         <p className="py-6 text-2xl max-md:text-lg text-accent-content">
           Layanan Digital Terbaik: Desain Web, Aplikasi, dan Logo.
         </p>
-        <Link to="/shop" className="btn btn-wide bg-blue-600 hover:bg-blue-500 text-white">Lihar Produk</Link>
+        <a href="#product" className="btn btn-wide bg-blue-600 hover:bg-blue-500 text-white">Lihar Produk</a>
       </div>
     </div>
   </div>
