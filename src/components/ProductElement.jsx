@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-const ProductElement = ({ id, title, imageUrl, price}) => {
+const ProductElement = ({ id, title, image, price}) => {
   const product = {
-    id, title, imageUrl, price
+    id, title, image, price
   };
   return (
     <div className="max-w-2xl">
@@ -10,7 +10,7 @@ const ProductElement = ({ id, title, imageUrl, price}) => {
         <Link to={`https://wa.me/6285397747546`} target="_blank">
           <img
             className="rounded-t-lg p-8"
-            src={`${imageUrl}`}
+            src={`${image}`}
             alt="product image"
           />
         </Link>
